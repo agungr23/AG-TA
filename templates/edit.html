@@ -1,0 +1,42 @@
+<!-- Code by Kelas Programmer
+Author: Setiawan Dimas Arimurti
+Author URL: https://kelasprogrammer.com
+License: Creative Commons Atribusi-NonKomersial 4.0 Internasional
+License URL: http://creativecommons.org/licenses/by-nc/4.0/
+-->
+<html>
+<head>
+   <title>Aplikasi CRUD python Menggunakan Flask | Kelasprogrammer.com </title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+</head>
+<body>
+   <div class="container">
+      <div class="col-sm-5">
+      <h2>Ubah Data Barang</h2>
+         <form action="url_for('edit', TeamCode={{jos}})" method="post">
+            <div class="form-group">
+               <label>Id Barang:</label>
+               <input type="text" name="id"  value="{{jos}}" class="form-control" placeholder="Masukan id barang" required />
+            </div>
+            <div class="form-group">
+               <label>Nama:</label>
+               <input type="text" name="nama"  value="{{jos1}}" class="form-control" placeholder="Masukan nama barang" required />
+            </div>
+            <div class="form-group">
+               <label>harga:</label>
+               <input type="text" name="harga"  value="{{jos2}}" class="form-control" placeholder="Masukan harga barang" required />
+            </div>
+            <div class="form-group">
+               <label>stok:</label>
+               <input type="text" name="stok"  value="{{jos3}}" class="form-control" placeholder="Masukan stok barang" required />
+            </div>
+            <div class="form-group">
+               <label>stok1:</label>
+               <input type="text" name="stok1"  value="{{jos4}}" class="form-control" placeholder="Masukan stok barang" required />
+            </div>
+            <button type="submit" id="Submit" name="submit" class="btn btn-primary">Edit Barang</button>
+      </form>
+   </div>
+</div>
+</body>
+</html>
