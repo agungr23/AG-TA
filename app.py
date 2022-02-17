@@ -620,8 +620,5 @@ def maphasil():
 #----------------------------------------------------------------------------
 
 if __name__ == '__main__':
-   application.listen(process.env.PORT || 3000, function(){
-      console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-   });
    application.run(debug=True)
 
